@@ -12,8 +12,6 @@ app.use(express.json());
 // Connect to MongoDB
 mongoose
   .connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
     dbName: "Blackcoffer",
   })
   .then(() => console.log("MongoDB connected"))
